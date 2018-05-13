@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".FriendListActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".FriendListActivity">
+
+
+        <ListView
+            android:id="@+id/lv_friend"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <Button
+            android:id="@+id/btn_addFriend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="添加好友" />
+    </LinearLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>
